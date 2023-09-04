@@ -1,0 +1,43 @@
+/* Add your CSS styles here */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #3498db, #2ecc71);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.color-button {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.color-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#textToChange {
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.color-button.clicked {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
